@@ -1,9 +1,11 @@
-var endPointURL =
-"https://search-xxx.ap-northeast-1.es.amazonaws.com/indexname/typename/";
+//Amazon ElasticSearch endpoint URL
+var endPointURL = "https://search-xxx.ap-northeast-1.es.amazonaws.com/indexname/typename/";
 
+//-------------------------------------
+// creating timestamp string
+//-------------------------------------
 var nowdate=new Date();
 
-//年・月・日・曜日を取得する
 var year = nowdate.getFullYear();
 var month = nowdate.getMonth()+1;
 var day = nowdate.getDate();
@@ -32,8 +34,7 @@ minute + ":" + second + "+0900";
 
 log(nowtime + "  " + messageValues.temperature);
 
-//APIを叩く際のパラメータ
-//プロパティの値を渡す
+//json data to send to Amazon ElasticSearch
 var jsonData = {
     "temp" : messageValues.temperature,
 "@timestamp":nowtime
