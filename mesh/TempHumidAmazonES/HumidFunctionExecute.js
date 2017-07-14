@@ -1,6 +1,5 @@
 //Amazon ElasticSearch endpoint URL
-var endPointURL =
-"https://search-xxx.ap-northeast-1.es.amazonaws.com/indexname/typename/";
+var endPointURL = "https://search-xxx.ap-northeast-1.es.amazonaws.com/indexname/typename/";
 
 //-------------------------------------
 // creating timestamp string
