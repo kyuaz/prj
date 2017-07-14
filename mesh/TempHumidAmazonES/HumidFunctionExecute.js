@@ -37,7 +37,7 @@ log(nowtime + "  " + messageValues.humidity);
 //json data to send to Amazon ElasticSearch
 var jsonData = {
     "humid" : messageValues.humidity,
-"@timestamp":nowtime
+	"@timestamp":nowtime
 };
 
 var sendData = JSON.stringify(jsonData);

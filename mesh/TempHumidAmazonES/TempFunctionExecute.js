@@ -37,7 +37,7 @@ log(nowtime + "  " + messageValues.temperature);
 //json data to send to Amazon ElasticSearch
 var jsonData = {
     "temp" : messageValues.temperature,
-"@timestamp":nowtime
+	"@timestamp":nowtime
 };
 
 var sendData = JSON.stringify(jsonData);
